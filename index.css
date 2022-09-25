@@ -135,6 +135,7 @@ aside .présentation {
 
 
 .cercle:first-child {
+    background-image: url("../Projet-Site-Playground/figs/drogon1.JPG");
     width: 15vw;
     aspect-ratio: 1;
     height: 15vw;
