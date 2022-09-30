@@ -5,15 +5,16 @@
     --fontSizeBase: 2.5em
 }
 
-body{
+body {
     background-image: url("../background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: auto;
+    width: 100vw;
 }
 
-header{
+header {
     background-color: var(--primary-color);
     --headerHeight: 25vh;
     box-shadow: 0px 10px 10px black;
@@ -26,49 +27,51 @@ nav {
     justify-content: center;
 
     align-items: center;
-    
+
 }
 
-.menu{
-    display: flex;  
+.menu {
+    display: flex;
 }
 
-li{
+li {
     margin: calc(var(--spacingBase)*6);
     border: solid 1px var(--secondary-color);
     padding: var(--spacingBase);
 }
 
 
-.logo{
+.logo {
     background-image: url("../logominis&bros.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: calc(var(--headerHeight)/2);  /* REVOIR LA HAUTEUR IMAGE ET LA HAUTEUR DU MENU */
+    height: calc(var(--headerHeight)/2);
+    /* REVOIR LA HAUTEUR IMAGE ET LA HAUTEUR DU MENU */
     width: 45%;
 }
 
-#main{
+#main {
     display: flex;
     flex-direction: row;
-    
+
 }
 
-.about{
+.about {
     width: 30vw;
     color: var(--secondary-color);
     margin: var(--spacingBase);
 
 }
-h1{
+
+h1 {
     text-align: center;
-    font-size: var(--fontSizeBase );
+    font-size: var(--fontSizeBase);
     margin-bottom: 1em;
     margin-top: 1.5em;
 }
 
-p{
+p {
     font-size: calc(var(--fontSizeBase) /2);
     line-height: 1.8em;
     letter-spacing: 0.1em;
@@ -76,50 +79,39 @@ p{
     margin-left: 1em;
 }
 
-.bulles{
-    width:70%;
+.bulles {
+    width: 70vw;
     height: 85vh;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-evenly;
-}
-
-.cercle:nth-child(2){
+    flex-direction: column;
 
 }
 
-article{
+article {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
     width: 15vw;
     aspect-ratio: 1;
     height: 15vw;
     border-radius: 50%;
-
 }
 
-.drogon{
+.drogon {
     background-image: url("../figs/drogon1.JPG");
-    
+    align-content: flex-start;
+
+
 }
 
-.xaro{
-    background-image: url("../figs/xaro1.JPG");  
-    align-content: center; 
+.xaro {
+    background-image: url("../figs/xaro1.JPG");
+    align-content: center;
+
 }
 
-.groot{
+.groot {
     background-image: url("../figs/groot.jpg");
+    align-content: flex-end;
+
 }
-
-
-
-
-
-
-
-
-
-
