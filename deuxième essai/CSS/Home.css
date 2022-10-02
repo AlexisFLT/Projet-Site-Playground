@@ -1,0 +1,168 @@
+:root {
+    --primary-color: #0F222D;
+    --secondary-color: #ebe7d9;
+    --spacingBase: 8px;
+    --fontSizeBase: 2.5em
+}
+
+body {
+    background-image: url("../../background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100vw;
+}
+
+header {
+    background-color: var(--primary-color);
+    height: 15vh;
+    width: 100vw;
+    box-shadow: 0px 10px 10px black;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    color: var(--secondary-color);
+    justify-content: center;
+    height: 15vh;
+    align-items: center;
+
+}
+
+.menu {
+    display: flex; 
+}
+
+.menu li {
+    margin: calc(var(--spacingBase)*6);
+    padding: var(--spacingBase);
+    height: 5vh;
+    font-size: 1.2em;    
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: all 300ms ease-in-out;
+}
+
+.menu li:after,
+.menu li:before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    display: block;
+    height: 1px;
+    transition: all 1.5s ease;
+    margin-top: 2px;
+}
+
+.menu li:after {
+    bottom: 25%;
+    
+}
+
+.menu li:before {
+    top: 25%;
+}
+
+.menu li:hover::after {
+    width: 100%;
+    height: 1px;
+    bottom: 25%;
+    background-color: var(--secondary-color);
+}
+
+.menu li:hover::before {
+    width: 100%;
+    height: 1px;
+    top: 25%;
+    background-color:var(--secondary-color);
+}
+
+
+.logo {
+    background-image: url("../../logominis&bros.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 25vh;
+    width: 45%;
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.about {
+    width: 30vw;
+    color: var(--secondary-color);
+    margin: var(--spacingBase);
+
+}
+
+h1 {
+    text-align: center;
+    font-size: var(--fontSizeBase);
+    margin-bottom: 1em;
+    margin-top: 1.5em;
+}
+
+p {
+    font-size: calc(var(--fontSizeBase) /2);
+    line-height: 1.8em;
+    letter-spacing: 0.1em;
+
+    margin-left: 1em;
+}
+
+.bulles {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+
+
+}
+
+article {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 12vw;
+    aspect-ratio: 1;
+    height: 12vw;
+    border-radius: 50%;
+}
+
+.drogon {
+    background-image: url("../../figs/drogon1.JPG");
+    margin-left: 3em;
+    
+}
+
+.xaro {
+    background-image: url("../../figs/xaro1.JPG");
+    align-self: center;
+    margin-right: 3em;
+}
+
+.groot {
+    background-image: url("../../figs/groot.jpg");
+    align-self: flex-end;
+    margin-right: 3em;
+}
+
+.cercle{
+	box-shadow: 5px 5px 5px 0 #0009;
+    transition: transform .1s;
+}
+
+.cercle:hover{
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
