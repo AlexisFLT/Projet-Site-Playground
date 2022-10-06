@@ -2,64 +2,69 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./CSS/reset.css" rel="stylesheet" type="text/css" />
-    <link href="./CSS/Home.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="./CSS/smallResolutih1on.css">
-    <script src="./JS/Home.js"></script>
-    <title>Minis&Bros</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./CSS/reset.css" rel="stylesheet" type="text/css" />
+  <link href="./CSS/Home.css" rel="stylesheet" type="text/css" />
+  <link href="./CSS/smallResolutih1on.css" rel="stylesheet" />
+
+  <title>Minis&Bros</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul class="menuGauche menu">
-                <li class="liGauche premier">Home</li>
-                <li class="liGauche second">Galerie</li>
-            </ul>
+  <header>
+    <nav>
+      <ul class="menuGauche menu">
+        <li class="liGauche premier">Home</li>
+        <li class="liGauche second">Galerie</li>
+      </ul>
 
-            <div class="logo" alt="Logo Minis&Bros"></div>
+      <div class="logo" alt="Logo Minis&Bros"></div>
 
-            <ul class="menuDroite menu">
-                <li class="liDroite premier">Minis on Table</li>
-                <li class="liDroite second">Contacts</li>
-            </ul>
-        </nav>
+      <ul class="menuDroite menu">
+        <li class="liDroite premier">Minis on Table</li>
+        <li class="liDroite second">Contacts</li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section id="reveal" class="presentation invisible ">
+      <aside class="about ">
+        <h1>About</h1>
+        <p>
+          Je suis Alexis, un amateur et passionné de peinture sur figurines. Je
+          peins simplement à mon niveau avec pour objectif de parfaire les
+          techniques. Je posséde également une imprimante 3D (pla) qui me
+          permet d'imprimer décors et autres éléments afin d'égayer les socles
+          et les tables de jeux. Je peins principalement des figurines A Song
+          of Ice and Fire miniatures, Marvel Crisis Protocol, Star Wars
+          Legion.
+        </p>
+        <br />
+        <p>
+          Mis à part vous faire découvrir ma passion, cette page a aussi un
+          objectif plus personnel et professionnel car elle va me servir de
+          terrain de jeu pour me perfectionner pour ma reconversion dans le
+          developpement web. Si tu passes par là, un grand merci.<br />
+          <br />
+        </p>
 
-    </header>
-    <main id="main">
-        <section class="presentation">
-            <aside class="about">
-                <h1>About</h1>
-                <p>Je suis Alexis, un amateur et passionné de peinture sur figurine.
-                    Je peins simplement à mon niveau avec pour objectif de parfaire les techniques.
-                    Je posséde également une imprimante 3D (pla) qui me permet d'imprimer décors et autres éléments afin
-                    d'égayer les socles et les tables de jeux.
-                    Je peins principalement des figurines A Song of Ice and Fire miniatures, Marvel Crisis Protocol,
-                    Star Wars
-                    Legion.
-                </p><br>
-                <p>Mis à part vous faire découvrir ma passion, cette page a aussi un objectif plus personnel et
-                    professionnel car elle va me servir
-                    de terrain de jeu pour me perfectionner pour ma reconversion dans le developpement web.
-                    Si tu passes par là, un grand merci.<br>
-                    <br>
-                <p>Be Safe<br>
-                    Be Good<br>
-                    Be Well<br>
-                </p>
-            </aside>
-        </section>
+        <p>
+          Be Safe<br />
+          Be Good<br />
+          Be Well<br />
+        </p>
+      </aside>
+    </section>
 
-        <section class="bulles">
-            <article class="drogon cercle"></article>
-            <article class="xaro cercle"></article>
-            <article class="groot cercle"></article>
-        </section>
-
-    </main>
+    <section class="bulles" id="invisibleBulles">
+      <article class="drogon cercle slide-in-right"></article>
+      <article class="xaro cercle slide-in-right "></article>
+      <article class="groot cercle slide-in-right"></article>
+    </section>
+  </main>
+  <script src="./JS/Home.js"></script>
 </body>
 
 </html>

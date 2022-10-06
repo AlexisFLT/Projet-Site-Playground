@@ -1,6 +1,4 @@
-const bulleImage = document.querySelector('.cercle');
-
-bulleImage.addEventListener('mouseover', function(){
-    bulleImage.style.right = "20px";
-})
-
+const reveal = document.querySelector("#reveal");
+window.addEventListener("pageshow", () => {
+  reveal.classList.toggle("revealVisible");
+});
