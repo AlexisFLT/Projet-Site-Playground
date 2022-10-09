@@ -7,27 +7,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="./CSS/reset.css" rel="stylesheet" type="text/css" />
   <link href="./CSS/Home.css" rel="stylesheet" type="text/css" />
-  <link href="./CSS/smallResolutih1on.css" rel="stylesheet" />
-  <link media="" <title>Minis&Bros</title>
+  <link href="./CSS/smallResolution.css" rel="stylesheet" />
+  <title>Minis&Bros</title>
 </head>
 
 <body>
   <header>
-    <nav>
-      <ul class="menuGauche menu">
-        <li class="liGauche premier">Home</li>
-        <li class="liGauche second">Galerie</li>
+    <nav class="navBar" role="navigation">
+      <ul class="menuGauche menu navBarLinks">
+        <li class="liGauche premier navBarLink"><a href="#">Home</a></li>
+        <li class="liGauche second navBarLink"><a href="#">Galerie</a></li>
       </ul>
 
       <div class="logo" alt="Logo Minis&Bros"></div>
 
-      <ul class="menuDroite menu">
-        <li class="liDroite premier">Minis on Table</li>
-        <li class="liDroite second">Contacts</li>
+      <ul class="menuDroite menu navBarLinks">
+        <li class="liDroite premier navBarLink"><a href="#">Minis on Table</a></li>
+        <li class="liDroite second navBarLink"><a href="#">Contacts</a></li>
       </ul>
+      <button class="burger">
+        <span class="bar"></span>
+      </button>
     </nav>
   </header>
-  <main id="main">
+  <main id="main" role="main">
     <section id="reveal" class="presentation slide-in-left  ">
       <aside class="about ">
         <h1>About</h1>
